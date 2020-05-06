@@ -2,9 +2,7 @@
 
 # Form implementation generated from reading ui file 'car.ui'
 #
-# Created by: PyQt5 UI code generator 5.14.2
-#
-# WARNING! All changes made in this file will be lost!
+# Created by: PyQt5 UI code generator 5.14.2 And Erfan Saberi (Thanks to Jadi)
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
