@@ -4,15 +4,8 @@
 #
 # Created by: PyQt5 UI code generator 5.14.2 And Erfan Saberi (Thanks to Jadi)
 
-# Import PyQt5 Module
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-# Import Net , Regex and other Modules
-from bs4 import BeautifulSoup
-from sklearn import tree
-import requests
-import sys
-import re
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -147,11 +140,15 @@ class Ui_MainWindow(object):
             self.logs.append('=======================')
             app.processEvents()
             self.logs.append(loadingreq)
+            import requests
             self.logs.append(loadingre)
             app.processEvents()
+            import re
             self.logs.append(loadingsk)
             app.processEvents()
+            from sklearn import tree
             self.logs.append(loadingbs)
+            from bs4 import BeautifulSoup
             app.processEvents()
             #Exctracting data from web
             for i in range(1,a+1):
@@ -268,6 +265,7 @@ class Ui_MainWindow(object):
 
 
 if __name__ == "__main__":
+    import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
